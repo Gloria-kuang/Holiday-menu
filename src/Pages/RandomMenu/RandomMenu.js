@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./RandomMenu.scss";
 import MenuCard from "../../Components/MenuCard/MenuCard";
 import HomeTitle from "../../Components/HomeTitle/HomeTitle";
-import { useState } from "react";
-import axios from "axios";
 
 function RandomMenu() {
   const [randomMenu, setRandomMenu] = useState(null);

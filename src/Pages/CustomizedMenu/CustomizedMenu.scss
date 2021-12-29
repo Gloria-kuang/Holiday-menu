@@ -1,7 +1,7 @@
 .customized-navigation {
   background-image: url("../../assets/Section-Hero.jpeg");
   width: 100vw;
-  height: 20rem;
+  height: 30rem;
   background-position: center;
   background-size: cover;
 }
@@ -10,4 +10,74 @@
   display: flex;
   justify-content: space-between;
   padding: 4rem 5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+
+  &__container {
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    background-color: #ceb888;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    box-shadow: 4px 4px 0px white;
+    margin-bottom: 2rem;
+  }
+
+  &__dropdown {
+    height: 3rem;
+    border: 3px solid #ceb888;
+    color: #b49553;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    background-color: #ceb888;
+    border-radius: 5px;
+    color: white;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: 2px 2px 5px grey;
+    margin: 0 auto;
+
+    &:hover {
+      background-color: #b49553;
+    }
+  }
+}
+
+.main-text {
+  color: #ceb888;
+  font-size: 1.5rem;
+
+  &__container {
+    border: 3px solid #ceb888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    height: 5rem;
+  }
 }

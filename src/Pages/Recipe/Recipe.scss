@@ -1,9 +1,9 @@
 .recipe {
   background-image: url("../../assets/recipe-background.jpg");
   width: 100%;
-  height: 120vh;
   background-size: cover;
   background-position: center;
+  padding: 2rem;
 
   &__container {
     width: 50%;
@@ -15,7 +15,8 @@
     text-shadow: 2px 2px 4px white;
     text-align: center;
     font-size: 3rem;
-    padding-top: 8rem;
+    padding-top: 5rem;
+    margin-bottom: 1rem;
   }
 
   &__tag {
@@ -35,9 +36,6 @@
     box-shadow: 2px 2px 5px grey;
     margin-right: 4rem;
   }
-  &__category {
-    margin: 0;
-  }
 
   &__area-container {
     background-color: #ceb888;
@@ -51,9 +49,16 @@
     box-shadow: 2px 2px 5px grey;
   }
 
+  &__image {
+    display: block;
+    width: 12rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+  }
+
   &__ingredient {
     width: 40%;
-    margin: 2rem auto;
+    margin: 1rem auto;
     background-color: white;
     padding: 1rem;
     border-radius: 5px;
@@ -95,4 +100,19 @@
     color: black;
     margin: 0;
   }
+}
+
+.back-home {
+  background-color: #ceb888;
+  border-radius: 2px;
+  color: white;
+  width: 6rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px grey;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  text-decoration: none;
 }
