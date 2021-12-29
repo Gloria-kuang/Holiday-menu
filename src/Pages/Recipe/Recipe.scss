@@ -1,0 +1,98 @@
+.recipe {
+  background-image: url("../../assets/recipe-background.jpg");
+  width: 100%;
+  height: 120vh;
+  background-size: cover;
+  background-position: center;
+
+  &__container {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: #b49553;
+    text-shadow: 2px 2px 4px white;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 8rem;
+  }
+
+  &__tag {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__category-container {
+    background-color: #ceb888;
+    border-radius: 2px;
+    color: white;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px grey;
+    margin-right: 4rem;
+  }
+  &__category {
+    margin: 0;
+  }
+
+  &__area-container {
+    background-color: #ceb888;
+    border-radius: 2px;
+    color: white;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px grey;
+  }
+
+  &__ingredient {
+    width: 40%;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    opacity: 0.8;
+
+    &-title {
+      color: rgb(74, 73, 73);
+      text-transform: uppercase;
+      margin: 0;
+      text-align: center;
+    }
+
+    &-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem;
+    }
+
+    &-item {
+      color: rgb(74, 73, 73);
+      font-style: italic;
+      border-bottom: 1px solid #ceb888;
+      padding-top: 0.5rem;
+    }
+  }
+
+  &__instruction-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 2px solid #ceb888;
+    opacity: 0.7;
+  }
+
+  &__instruction {
+    font-size: 0.8rem;
+    color: black;
+    margin: 0;
+  }
+}
