@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Recipe.scss";
 import { Link } from "react-router-dom";
+import homeButton from "../../assets/home-rv.png";
 
 function Recipe(props) {
   const recipeId = props.match.params.id;
@@ -55,6 +56,9 @@ function Recipe(props) {
 
   return (
     <main className="recipe">
+      <Link to="/">
+        <img src={homeButton} alt="home" className="home-button"></img>
+      </Link>
       <div className="recipe__container">
         <h2 className="recipe__title">{menuData.strMeal}</h2>
         <div className="recipe__tag">
@@ -80,7 +84,7 @@ function Recipe(props) {
           <p className="recipe__instruction">{menuData.strInstructions}</p>
         </div>
 
-        <Link to="/" className="back-home">
+        <Link to="/customized-menu" className="back-home">
           <p>BACK</p>
         </Link>
       </div>

@@ -4,6 +4,9 @@
   height: 20rem;
   background-position: center;
   background-size: cover;
+}
+
+.go-random-contatiner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,4 +17,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 4rem 5rem;
+}
+
+.home-button {
+  width: 3rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }

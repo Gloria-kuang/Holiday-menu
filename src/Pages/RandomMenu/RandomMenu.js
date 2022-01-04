@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./RandomMenu.scss";
 import MenuCard from "../../Components/MenuCard/MenuCard";
 import HomeTitle from "../../Components/HomeTitle/HomeTitle";
+import homeButton from "../../assets/home-rv.png";
+import { Link } from "react-router-dom";
 
 function RandomMenu() {
   const [randomMenu, setRandomMenu] = useState(null);
@@ -39,7 +41,12 @@ function RandomMenu() {
   return (
     <div>
       <nav className="random-navigation">
-        <HomeTitle text="Go Random" getRandomMenu={getRandomMenu} />
+        <Link to="/">
+          <img src={homeButton} alt="home" className="home-button"></img>
+        </Link>
+        <div className="go-random-contatiner">
+          <HomeTitle text="Go Random" getRandomMenu={getRandomMenu} />
+        </div>
       </nav>
       <section className="menu-container">
         {randomMenu.map((menu) => (

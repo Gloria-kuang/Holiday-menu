@@ -2,6 +2,8 @@ import React from "react";
 import MenuCard from "../../Components/MenuCard/MenuCard";
 import "./CustomizedMenu.scss";
 import { useState, useEffect } from "react";
+import homeButton from "../../assets/home-rv.png";
+import { Link } from "react-router-dom";
 
 function CustomizedMenu() {
   const [category, setCategory] = useState(null);
@@ -129,6 +131,9 @@ function CustomizedMenu() {
   return (
     <div>
       <nav className="customized-navigation">
+        <Link to="/">
+          <img src={homeButton} alt="home" className="home-button"></img>
+        </Link>
         <div className="form__container">
           <form onSubmit={handleCategorySubmit} className="form">
             <label htmlFor="category" className="form__label">
